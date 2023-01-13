@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
 .flip {
-  box-shadow: 0 0 10px rgba(128, 128, 128, 0.5);
+  box-shadow: 0 0 10px rgba(133, 133, 15, 0.5);
   padding: 1em;
   width: 190px;
   height: 254px;
@@ -28,6 +29,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  font-size: 30px;
 }
 
 .flip .back {
@@ -94,11 +96,11 @@
 }
 /* .download-btn download */
 .download-btn {
-  --glow-color: rgb(217, 176, 255);
-  --glow-spread-color: rgba(191, 123, 255, 0.781);
-  --enhanced-glow-color: rgb(231, 206, 255);
-  --btn-color: rgb(100, 61, 136);
-  border: 0.25em solid var(--glow-color);
+  --glow-color: #cca549;
+  --glow-spread-color: #ffd678;
+  --enhanced-glow-color: #a47e28;
+  --btn-color: rgb(92, 80, 96);
+  border: 0.25em solid #c39731;
   padding: 1em 3em;
   color: var(--glow-color);
   font-size: 15px;
@@ -113,6 +115,9 @@
   position: relative;
   transition: all 0.3s;
   margin-top: 50px;
+  font-family: "Alumni Sans", sans-serif;
+  font-weight: bolder !important;
+  letter-spacing: 6px;
 }
 
 .download-btn::after {

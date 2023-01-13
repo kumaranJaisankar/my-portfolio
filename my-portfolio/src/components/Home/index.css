@@ -9,12 +9,55 @@
 }
 .name {
   position: relative;
-  top: -100px;
+  text-align: start !important;
+  top: -150px;
   font-family: "Alumni Sans", sans-serif;
+  font-size: 34px !important;
+  margin-left: 10px !important;
 }
 p {
   font-family: "Alumni Sans", sans-serif;
 }
 .vis {
   visibility: visible !important;
+}
+/* welcome text */
+
+.welcome {
+  font-family: "Permanent Marker";
+  position: relative;
+  top: -80px;
+  margin-top: 20px !important;
+  animation: color-change infinite 5s linear;
+}
+.div-width {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* animation key frame  */
+@keyframes color-change {
+  0% {
+    color: rgb(200, 203, 30);
+  }
+  25% {
+    color: #e25e3b;
+  }
+  50% {
+    color: rgb(90, 207, 57);
+  }
+  75% {
+    color: rgb(34, 153, 141);
+  }
+  100% {
+    color: rgb(12, 86, 113);
+  }
+}
+.icone-rotate {
+  transform: rotate(90deg);
+}
+button {
+  outline: none;
 }

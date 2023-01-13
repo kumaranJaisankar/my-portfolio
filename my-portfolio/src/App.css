@@ -12,12 +12,16 @@
 
 .App-header {
   color: white;
-  min-height: 150vh;
 }
 .App {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80vh;
   overflow-x: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
 }
 
 /* .App-link {
@@ -38,36 +42,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-/* welcome text */
-
-.welcome {
-  font-family: "Permanent Marker";
-  position: relative;
-  top: -80px;
-  animation: color-change infinite 5s linear;
-  /* animation-name: color-change;
-  animation-duration: 4s;
-  animation-iteration-count: infinite; */
-}
-
-/* animation key frame  */
-@keyframes color-change {
-  0% {
-    color: white;
-  }
-  25% {
-    color: #e25e3b;
-  }
-  50% {
-    color: rgb(84, 84, 21);
-  }
-  75% {
-    color: rgb(51, 167, 25);
-  }
-  100% {
-    color: rgb(12, 86, 113);
-  }
 }
 
 @-webkit-keyframes tracking-in-expand {

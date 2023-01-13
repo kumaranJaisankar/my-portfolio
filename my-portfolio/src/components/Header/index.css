@@ -4,3 +4,9 @@
   font-family: "Permanent Marker", cursive;
   font-size: 40px;
 }
+.yello {
+  color: #f3b934;
+}
+.nav-color {
+  background-color: #f3b934 !important;
+}

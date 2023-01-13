@@ -1,5 +1,6 @@
 import "./animation.css";
 import "./index.css";
+const logo = "kum's";
 
 const Header = () => (
   <nav className=" navbar navbar-expand-lg navbar-dark bg-dark">
@@ -7,10 +8,12 @@ const Header = () => (
       className="text-flicker-in-glow logo-style navbar-brand ml-xl-5"
       href="/"
     >
-      {"<Kum/s>"}
+      <span className="yello">{"<"}</span>
+      {logo}
+      <span className="yello">{"/>"}</span>
     </a>
     <button
-      className="navbar-toggler"
+      className="navbar-toggler nav-color"
       type="button"
       data-toggle="collapse"
       data-target="#navbarNav"
