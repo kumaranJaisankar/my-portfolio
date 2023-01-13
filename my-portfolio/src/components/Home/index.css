@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
+.rounded-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  position: relative;
+  left: -26px;
+  top: -120px;
+}
+.name {
+  position: relative;
+  top: -100px;
+  font-family: "Alumni Sans", sans-serif;
+}
+p {
+  font-family: "Alumni Sans", sans-serif;
+}
+.vis {
+  visibility: visible !important;
+}

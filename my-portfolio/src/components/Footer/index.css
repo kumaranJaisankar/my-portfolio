@@ -1,0 +1,9 @@
+.text-white {
+  margin: 0px;
+}
+.footer-f {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
