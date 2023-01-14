@@ -10,3 +10,9 @@
 .nav-color {
   background-color: #f3b934 !important;
 }
+.navbar {
+  position: sticky;
+  top: 0;
+  bottom: 20px;
+  z-index: 1;
+}

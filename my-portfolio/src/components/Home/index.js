@@ -9,7 +9,7 @@ import {
 } from "react-icons/ai";
 
 const Home = () => (
-  <div className="div-width" id="Home-section">
+  <div className="div-width" id="HomeSection">
     <h1 className="welcome">Welcome</h1>
     <div className="flip">
       <div className="content">
@@ -47,7 +47,7 @@ const Home = () => (
             className="d-xl-none d-sm-block"
             href="mailto:kumaranhb5@gmail.com"
           >
-            <AiOutlineMail color="black" size={30} />s
+            <AiOutlineMail color="black" size={30} />
           </a>
           <a
             className="d-none d-xl-block"

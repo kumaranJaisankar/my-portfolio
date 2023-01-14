@@ -1,4 +1,4 @@
-.container {
+.containers {
   width: 100%;
   min-height: 196px;
   padding-right: 10px;
@@ -39,7 +39,7 @@
 }
 
 .btn-color {
-  background: #ee411a;
+  background: #e7b70c;
 }
 
 .btn:hover {
@@ -73,7 +73,7 @@
 }
 
 .terminal_body {
-  background: rgba(56, 4, 40, 0.9);
+  background: rgba(31, 4, 23, 0.9);
   height: calc(100% - 30px);
   padding-top: 2px;
   margin-top: -1px;
@@ -133,8 +133,9 @@
 }
 .about-container {
   position: relative;
-  width: 100%;
+  width: 90%;
   top: -160px;
+  height: 40vh;
 }
 @media screen and (min-width: 576px) {
   .about-container {

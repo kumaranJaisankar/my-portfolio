@@ -10,6 +10,9 @@
   animation-delay: initial;
   font-family: "Roboto";
 }
+* {
+  outline: none;
+}
 
 .flip:hover {
   transform: rotateY(180deg);
@@ -118,6 +121,7 @@
   font-family: "Alumni Sans", sans-serif;
   font-weight: bolder !important;
   letter-spacing: 6px;
+  outline: none;
 }
 
 .download-btn::after {

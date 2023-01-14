@@ -2,9 +2,9 @@ import "./about.css";
 const hi = "Hi :)";
 
 const AboutMe = () => (
-  <div className="about-container">
+  <div className="about-container" id="AboutMe">
     <h1 className="aboutme-heading">ABOUT ME</h1>
-    <div className="container">
+    <div className="containers">
       <div className="container_terminal"></div>
       <div className="terminal_toolbar">
         <div className="butt">
@@ -14,7 +14,7 @@ const AboutMe = () => (
         </div>
         <p className="user">WHO AM I?</p>
       </div>
-      <div className="terminal_body">
+      <div className="terminal_body bg-black">
         <div className="terminal_promt">
           <span className="terminal_user">kumaran@28/04/2000:</span>
           <span className="terminal_location">~</span>

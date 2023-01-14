@@ -28,7 +28,10 @@ p {
   position: relative;
   top: -80px;
   margin-top: 20px !important;
-  animation: color-change infinite 5s linear;
+  color: white;
+  /* animation: color-change infinite 5s linear; */
+  text-shadow: 1px 1px 2px rgb(225, 212, 212), 0 0 1em rgb(248, 248, 255),
+    0 0 0.2em rgb(244, 244, 251);
 }
 .div-width {
   width: 100%;
@@ -37,24 +40,6 @@ p {
   align-items: center;
 }
 
-/* animation key frame  */
-@keyframes color-change {
-  0% {
-    color: rgb(200, 203, 30);
-  }
-  25% {
-    color: #e25e3b;
-  }
-  50% {
-    color: rgb(90, 207, 57);
-  }
-  75% {
-    color: rgb(34, 153, 141);
-  }
-  100% {
-    color: rgb(12, 86, 113);
-  }
-}
 .icone-rotate {
   transform: rotate(90deg);
 }

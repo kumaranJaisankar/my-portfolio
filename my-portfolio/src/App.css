@@ -8,6 +8,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: content-box;
+  outline: none !important;
 }
 
 .App-header {

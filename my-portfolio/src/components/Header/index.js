@@ -26,28 +26,28 @@ const Header = () => (
     <div className="collapse navbar-collapse " id="navbarNav">
       <ul className="navbar-nav ml-auto mr-xl-5">
         <li className="nav-item active">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="#HomeSection">
             <button className="cta">
               <span className="hover-underline-animation">
-                Home <span className="sr-only">(current)</span>
+                HOME <span className="sr-only">(current)</span>
               </span>
             </button>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="#AboutMe">
             <button className="cta">
               <span className="hover-underline-animation">
-                Home <span className="sr-only">(current)</span>
+                ABOUT ME <span className="sr-only">(current)</span>
               </span>
             </button>
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/">
+          <a className="nav-link" href="#Myproject">
             <button className="cta">
               <span className="hover-underline-animation">
-                Home <span className="sr-only">(current)</span>
+                PROJECTS <span className="sr-only">(current)</span>
               </span>
             </button>
           </a>
