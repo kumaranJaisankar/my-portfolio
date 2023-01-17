@@ -111,7 +111,7 @@
 }
 article {
   width: 100%;
-  position: static;
+  min-height: 70vh;
 }
 .my-project {
   color: white;
@@ -119,12 +119,12 @@ article {
   text-align: center;
   font-size: 24px;
   font-weight: 100;
-  margin-bottom: 30px;
+  margin-bottom: 40px !important;
 }
 @media screen and (max-width: 576px) {
   article {
     position: relative;
-    top: -100px;
+    top: 100px;
   }
 }
 .row-2 {

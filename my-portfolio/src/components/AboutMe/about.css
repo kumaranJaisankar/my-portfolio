@@ -132,17 +132,16 @@
   }
 }
 .about-container {
-  position: relative;
+  /* position: relative; */
   width: 90%;
-  top: -160px;
-  height: 40vh;
+  /* top: -160px; */
 }
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
   .about-container {
     position: relative;
     top: -100px;
   }
-}
+} */
 .about-container .aboutme-heading {
   color: white;
   letter-spacing: 4px;

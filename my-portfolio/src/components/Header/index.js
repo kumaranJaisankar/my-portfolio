@@ -6,7 +6,7 @@ const Header = () => (
   <nav className=" navbar navbar-expand-lg navbar-dark bg-dark">
     <a
       className="text-flicker-in-glow logo-style navbar-brand ml-xl-5"
-      href="/"
+      href="#HomeSection"
     >
       <span className="yello">{"<"}</span>
       {logo}
@@ -48,6 +48,15 @@ const Header = () => (
             <button className="cta">
               <span className="hover-underline-animation">
                 PROJECTS <span className="sr-only">(current)</span>
+              </span>
+            </button>
+          </a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href="#MySkills">
+            <button className="cta">
+              <span className="hover-underline-animation">
+                SKILLS <span className="sr-only">(current)</span>
               </span>
             </button>
           </a>

@@ -9,6 +9,8 @@
   animation: rotating infinite 10s linear;
   animation-delay: initial;
   font-family: "Roboto";
+  position: relative;
+  top: 60px;
 }
 * {
   outline: none;
