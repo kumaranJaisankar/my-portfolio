@@ -15,5 +15,11 @@
   top: 0;
   bottom: 0;
   z-index: 1030;
-  height: 60px !important;
+  
+}
+@media screen and (max-width:576px) {
+  .navbar{
+    height: 50px !important;
+    padding-bottom: 15px !important;
+  }
 }
