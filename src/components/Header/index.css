@@ -13,6 +13,7 @@
 .navbar {
   position: sticky;
   top: 0;
-  bottom: 20px;
-  z-index: 3;
+  bottom: 0;
+  z-index: 1030;
+  height: 60px !important;
 }
