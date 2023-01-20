@@ -10,16 +10,10 @@
 .nav-color {
   background-color: #f3b934 !important;
 }
+
 .navbar {
   position: sticky;
   top: 0;
-  bottom: 0;
-  z-index: 1030;
-  
-}
-@media screen and (max-width:576px) {
-  .navbar{
-    height: 50px !important;
-    padding-bottom: 15px !important;
-  }
+  bottom: 20px;
+  z-index: 3;
 }
