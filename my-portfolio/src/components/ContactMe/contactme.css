@@ -1,0 +1,57 @@
+.connect-me {
+  color: white;
+  letter-spacing: 4px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 100;
+  margin-bottom: 30px;
+  margin-top: 0px;
+}
+.contact-container {
+  width: 100%;
+  padding-top: 10px;
+  background-color: black;
+}
+.icone-round {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+}
+.icone-round:hover {
+  background: transparent !important;
+  border: 2px solid rgb(195, 135, 38) !important;
+}
+.contact-details {
+  font-size: 20px;
+  color: rgb(110, 93, 93);
+}
+.contact-details:hover {
+  cursor: pointer;
+  color: rgb(195, 135, 38) !important;
+}
+.correction {
+  padding-left: 0px !important;
+}
+
+hr {
+  border: none;
+  border-top: 3px double white;
+  color: white;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+}
+
+hr:after {
+  background: black;
+  content: "THE END";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
+}
+.greet-text {
+  color: rgb(190, 172, 172);
+}

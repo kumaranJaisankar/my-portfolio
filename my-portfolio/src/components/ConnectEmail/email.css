@@ -1,0 +1,29 @@
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form label {
+  color: white;
+}
+.feedback-container {
+  border-left: 5px solid rgb(28, 182, 28);
+  width: 400px;
+  position: relative;
+  top: 0;
+  box-shadow: inset;
+}
+input::placeholder {
+  color: rgb(145, 121, 121) !important;
+  opacity: 0.4 !important;
+}
+textarea::placeholder {
+  color: rgb(145, 121, 121) !important;
+  opacity: 0.4 !important;
+}
+.btn-size {
+  font-size: 20px;
+}
+button {
+  outline: none !important;
+}

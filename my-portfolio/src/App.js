@@ -6,6 +6,8 @@ import AboutMe from "./components/AboutMe/about";
 import MyProject from "./components/MyProjects/project";
 import Skills from "./components/Skills/skills";
 import Expirence from "./components/experience/exprence";
+import ContactMe from "./components/ContactMe/contacrme";
+import GreetMsg from "./components/GreetMsg/greet";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Skills />
         <Expirence />
       </div>
+      <ContactMe />
+      <GreetMsg />
       <Footer />
     </>
   );

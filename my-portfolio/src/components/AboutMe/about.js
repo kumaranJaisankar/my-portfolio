@@ -20,7 +20,9 @@ const AboutMe = () => (
           <span className="terminal_location">~</span>
           <span className="terminal_bling">$</span>
         </div>
-        <h3 className="user-text">{hi}</h3>
+        <h3 className="user-text " style={{ fontWeight: "500" }}>
+          {hi}
+        </h3>
         <p className="user-text">
           My name is KUMARAN JAISANKAR and I am aspiring Front-end Developer. I
           have completed Bachelor of Engineering in Mechanical Engineering from

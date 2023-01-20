@@ -71,6 +71,13 @@
   margin-top: 15px;
   margin-bottom: 15px;
 }
+@media screen and (min-width: 576px) {
+  .user-text {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 20px;
+  }
+}
 
 .terminal_body {
   background: rgba(31, 4, 23, 0.9);
