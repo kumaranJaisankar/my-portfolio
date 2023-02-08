@@ -2,7 +2,7 @@ import "./exprence.css";
 import { Chrono } from "react-chrono";
 import { MdOutlineWork, MdSchool } from "react-icons/md";
 import { AiFillRead } from "react-icons/ai";
-import { MagnifyingGlass } from "react-loader-spinner";
+// import { MagnifyingGlass } from "react-loader-spinner";
 
 const Expirence = () => {
   return (
@@ -27,17 +27,15 @@ const Expirence = () => {
           <MdSchool color="#f3b934" size={40} />
         </div>
         <div>
-          <MagnifyingGlass
-            visible={true}
-            height="80"
-            width="80"
-            ariaLabel="MagnifyingGlass-loading"
-            wrapperStyle={{}}
-            wrapperClass="MagnifyingGlass-wrapper"
-            glassColor="#c0efff"
-            color="#f3b934"
-          />
-          <p style={{ color: "white" }}>Searching...</p>
+        <h1 className="course-title">
+            Exprience{" "}
+            <span className="badge badge-secondary p-1">
+              Feb'2023 - present
+            </span>
+          </h1>
+          <p className="discription">
+          I am currently working as Associate Software Developer at Vanna info tech  (Vanna Infotech is a leading software services company specializing in application development across all major software platforms) and boosting my professional skills.
+          </p>
         </div>
         <div>
           <h1 className="course-title">

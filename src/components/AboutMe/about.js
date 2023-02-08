@@ -24,7 +24,7 @@ const AboutMe = () => (
           {hi}
         </h3>
         <p className="user-text">
-          My name is KUMARAN JAISANKAR and I am aspiring Front-end Developer. I
+          My name is KUMARAN JAISANKAR  and I am currently working as Associate Software Developer at Vanna info tech. I
           have completed Bachelor of Engineering in Mechanical Engineering from
           Misrimal Navajee Munoth Jain Engineering, Chennai . I am much
           interested in developing new things which excite me a lot. :)

@@ -22,7 +22,7 @@ const Home = () => (
           </h5>
         </div>
         <div className="back">
-          <p>I'm &nbsp; Aspiring Front-end Developer</p>
+          <p>Associate Software Developer</p>
         </div>
       </div>
     </div>
