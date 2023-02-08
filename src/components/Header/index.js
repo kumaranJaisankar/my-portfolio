@@ -3,7 +3,7 @@ import "./index.css";
 const logo = "kum's";
 
 const Header = () => (
-  <nav className=" navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+  <nav className=" navbar navbar-expand-lg navbar-dark bg-dark shadow-lg fixed-top">
     <a
       className="text-flicker-in-glow logo-style navbar-brand ml-xl-5"
       href="#HomeSection"
