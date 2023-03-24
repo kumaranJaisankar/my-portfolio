@@ -10,6 +10,34 @@
   box-sizing: content-box;
   outline: none !important;
 }
+html , body{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(66, 56, 56);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5rem;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255, 255, 255);
+}
+
 
 .App-header {
   color: white;
