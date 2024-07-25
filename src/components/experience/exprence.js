@@ -30,7 +30,7 @@ const Expirence = () => {
         <h1 className="course-title">
             Exprience{" "}
             <span className="badge badge-secondary p-1">
-              Feb'2023 - present
+              Aug'2020 - present
             </span>
           </h1>
           <p className="discription">
@@ -41,7 +41,7 @@ const Expirence = () => {
           <h1 className="course-title">
             Nxtwave Disruptive Technologies{" "}
             <span className="badge badge-secondary p-1">
-              May'2022 - Ongoing
+              May'2020 - completed
             </span>
           </h1>
           <p className="discription">
@@ -51,7 +51,7 @@ const Expirence = () => {
         <div>
           <h1 className="course-title">
             Undergraduation at MNM jain Eng{" "}
-            <span className="badge badge-secondary p-1">2017-2021</span>
+            <span className="badge badge-secondary p-1">2016-2020</span>
           </h1>
           <p className="discription">
             I completed my undergraduation in MECH from MNM jain Engineering
