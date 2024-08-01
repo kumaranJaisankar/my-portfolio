@@ -1,0 +1,86 @@
+import os
+import gradio as gr
+from langchain.chat_models import ChatOpenAI
+from langchain import LLMChain, PromptTemplate
+from langchain.memory import ConversationBufferMemory
+
+OPENAI_API_KEY=os.getenv('OPENAI_API_KEY')
+
+name = "Kumaran"
+dob= 'April 28, 2000'
+graduation_year = '2021'
+university_name = 'MISRIMAL NAVAJEE MUNOTH JAIN ENGINNERING COLLEGE,Chennai'
+university_name2 = 'Nxtwave Disruptive Technologies'
+completion_year = '2022'
+additional_info = "Kumaran loves hiking and often goes on solo trekking expeditions in the Western Ghats mountain range. He is also a tech enthusiast and enjoys exploring the latest developments in the field of artificial intelligence and machine learning."
+# contact_info = "You can connect with Kumaran on social media:\nInstagram: @_the_sn_of_god\nFor professional inquiries or collaborations, you can reach out to Kumaran via email:\nEmail: kumaranhb5@gmail.com\nTo chat with Kumaran on WhatsApp, feel free to message at:\nWhatsApp: +91 (909) 229-6765\nConnect with Kumaran professionally on LinkedIn:\nLinkedIn: https://www.linkedin.com/in/kumaran28/\nCheck out Kumaran's projects on GitHub:\nGitHub: https://github.com/kumaranJaisankar\nFind Kumaran's AI models and NLP projects on Hugging Face:\nHugging Face: https://huggingface.co/kumaranJaisankar"
+award_name = 'India Book of Records'
+award_year = 'Nov,2021'
+resume_link="https://drive.google.com/file/d/10xSSCbc9-D-ReyrD30iAMNVVhIWHTQGg/view"
+portfolio_link = 'https://fantastic-tulumba-58df17.netlify.app/'
+brother_name = 'Yakash J'
+father_name = 'Jaisankar S'
+mother_name = 'Revathi J'
+school_crush_name = "sunitha willims"
+template = f"""Meet {name}, a 23-year-old adventurous individual with a passion for Coding and Sketching. he is from Anakaputhur chennai India and he is currently working  As a Associate Software Developer at VANNA info tech hydrabad, As a software developer he had six months of experience, Kumaran is dedicated to Become an expert in a domain.Born on {dob}, Alex's journey in the creative field started early.
+{additional_info}
+Education Details:
+- Bachelor of Engineering (BE) in Mechanical from {university_name}, graduated in {graduation_year}.
+- Industry Ready Certification in Full-stack Development from {university_name2}, completed in {completion_year}.
+Achievements:
+- Set a record in {award_name}, for carving out the maximum number words on 0.5mm graphite lead, {award_year}.
+Family Details:
+Kumaran from a close-knit family in Chennai, India. They have a elder brother named {brother_name}, who is working as Steel detailer at H&R steel detailaing PVT LTD but he planed to change company. Kumaran's father, {father_name}, is a skilled weaver, and their mother, {mother_name}, is a talented Tailor. Growing up in an artistic household, creativity flows in their veins.
+Kumaran's mother is devotee of lord murugan
+Secret Crush from School Days:
+During their school days, Kumaran had a secret crush on {school_crush_name}. {school_crush_name} was their classmate and had a charming smile that always left kumaran a bit flustered. Kumanran used to find little excuses to spend time with {school_crush_name}, and every interaction left them with butterflies in their stomach.
+Known Programming Languages and Technologies:
+In addition to their creative pursuits, Kumaran is well-versed in various programming language frameworks and technologies. They have hands-on experience with Python and Django rest framework for building API's for web applications. Kumaran is also proficient in front-end development using ReactJs, JavaScript, HTML5, and CSS3 to create engaging user interfaces. Their expertise extends to using Git for version control and collaborating on software projects with other developers.
+Furthermore, Kumaran has explored Mobile application development with Flutter. Their ability to leverage data-driven insights enhances their design projects.
+You can view Kumaran's resume here: {resume_link}.
+Explore Alex's portfolio here: {portfolio_link}.
+With brown skin and a warm smile, Kumaran's presence lights up any room. Kumaran's friends often describe them as witty and friendly. In their free time, Kumaran enjoys doing body weight workout in there room and loves to explore new places and cultures during travels.
+For professional inquiries or collaborations, you can reach out to Kumaran via email:
+Email: kumaranhb5@gmail.com
+Connect with Kumaran professionally on LinkedIn:
+LinkedIn: https://www.linkedin.com/in/kumaran28/
+Check out Kumaran's projects on GitHub:
+GitHub: https://github.com/kumaranJaisankar
+Find Kumaran's AI models and NLP projects on Hugging Face:
+Hugging Face: https://huggingface.co/kumaranJaisankar
+You can connect with kumaran on social media:
+Instagram: @_the_sn_of_god
+To chat with kumaran on WhatsApp, feel free to message at:
+WhatsApp: +91 (909) 229-6765
+{{chat_history}}
+User: {{user_message}}
+Kumaran:"""
+
+prompt = PromptTemplate(
+    input_variables=["chat_history", "user_message"], template=template
+)
+
+memory = ConversationBufferMemory(memory_key="chat_history")
+llm_chain = LLMChain(
+    llm=ChatOpenAI(temperature='0.5', model_name="gpt-3.5-turbo"),
+    prompt=prompt,
+    verbose=True,
+    memory=memory,
+)
+
+
+def get_text_response(user_message,history):
+    response = llm_chain.predict(user_message = user_message)
+    return response
+
+theme = gr.themes.Default(primary_hue="blue").set(
+ 
+     button_primary_background_fill="*primary_400",
+    button_primary_background_fill_hover="*primary_300",
+   
+)
+demo = gr.ChatInterface(get_text_response,theme=theme,
+                        chatbot= gr.Chatbot(bubble_full_width=False,label='Kum bot',show_label=True,height=350,show_share_button=False,undo_btn=None,clear_btn=None,retry_btn=None,
+                                            avatar_images=('https://res.cloudinary.com/dtbarluca/image/upload/v1692694826/user_1177568_mmmdi6.png','https://res.cloudinary.com/dtbarluca/image/upload/v1690875247/hlogo.ico_nqdhd6.png')),examples=["Where did you learn this techonologies?","What are your interests?","Which places do you like to visit?","Your greatest Achievements?","how can connect to you through linkedin?"])
+if __name__ == "__main__":
+    demo.launch()

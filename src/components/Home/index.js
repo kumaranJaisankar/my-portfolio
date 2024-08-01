@@ -5,7 +5,7 @@ import SocialLink from "../SocialLinks/social";
 
 const Home = () => (
   <div className="div-width" id="HomeSection">
-    <h1 className="welcome">Welcome</h1>
+    <h1 className="welcome">Welcome<span className="blog-title-emoji">👋</span></h1>
     <div className="flip">
       <div className="content">
         <div className="front">

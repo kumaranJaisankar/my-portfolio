@@ -1,10 +1,22 @@
 import "./project.css";
 import { BiLinkExternal } from "react-icons/bi";
+import Lottie from "react-lottie";
+import animationData from "../../lottie/Animation - 1722505523448.json";
 
 const MyProject = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <article id="Myproject">
-      <h1 className="text-center text-white mb-3 my-project">MY PROJECTS</h1>
+      <h1 className="text-center text-white mb-0 my-project mt-5">
+        MY PROJECTS
+      </h1>
 
       <div className="row-2">
         <a
@@ -38,27 +50,35 @@ const MyProject = () => {
           </div>
         </a>
         <a
-          href="https://kumemojigame.ccbp.tech/"
-          className="nav-link cards   mb-3 mr-3"
+          href="https://kum-gen-ai.vercel.app/"
+          className="nav-link    mb-3 mr-3"
           target="_blank"
           rel="noreferrer"
         >
-          <div className="cards-img emoji-game">
-            <h1 className="text-dark mt-3 ml-3">Emoji Game</h1>
-          </div>
-          <div className="cards-info">
-            <p className="text-title">Emoji Game</p>
-
-            <a
-              href="https://kumemojigame.ccbp.tech/"
-              rel="noreferrer"
-              target="_blank"
-              className="nav-link"
-            >
-              <button className="cards-button">
-                View <BiLinkExternal />
-              </button>
-            </a>
+          <div>
+            <Lottie options={defaultOptions} height={400} width={400} />
+            <div className="gen_ai">
+              <p
+                style={{
+                  textAlign: "center",
+                  padding: 0,
+                  margin: 0,
+                  color: "#e9b013",
+                }}
+              >
+                Visit
+              </p>
+              <h1
+                style={{
+                  textAlign: "center",
+                  padding: 0,
+                  margin: 0,
+                  color: "#e9b013",
+                }}
+              >
+                Kum's GenAI
+              </h1>
+            </div>
           </div>
         </a>
         <a
