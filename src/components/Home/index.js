@@ -5,7 +5,9 @@ import SocialLink from "../SocialLinks/social";
 
 const Home = () => (
   <div className="div-width" id="HomeSection">
-    <h1 className="welcome">Welcome<span className="blog-title-emoji">👋</span></h1>
+    <h1 className="welcome">
+      Welcome<span className="blog-title-emoji">👋</span>
+    </h1>
     <div className="flip">
       <div className="content">
         <div className="front">
@@ -29,7 +31,7 @@ const Home = () => (
     <a
       target="_blank"
       rel="noreferrer"
-      href="https://drive.google.com/file/d/10xSSCbc9-D-ReyrD30iAMNVVhIWHTQGg/view?usp=drivesdk"
+      href="https://drive.google.com/file/d/14bu6M1g5WLH29Pz9D8IMiq7V5DNN7m05/view"
       className="nav-link"
     >
       <button className="download-btn">Download CV</button>
