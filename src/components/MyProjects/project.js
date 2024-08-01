@@ -51,11 +51,11 @@ const MyProject = () => {
         </a>
         <a
           href="https://kum-gen-ai.vercel.app/"
-          className="nav-link    mb-3 mr-3"
+          className="nav-link  mb-3 mr-3 p-0"
           target="_blank"
           rel="noreferrer"
         >
-          <div>
+          <div className="d-flex justify-content-center align-items-center flex-column ">
             <Lottie options={defaultOptions} height={400} width={400} />
             <div className="gen_ai">
               <p
