@@ -57,7 +57,7 @@ const MyProject = () => {
         >
           <div className="d-flex justify-content-center align-items-center flex-column ">
             <Lottie options={defaultOptions} height={400} width={400} />
-            <div className="gen_ai">
+            <div className="gen_ai ">
               <p
                 style={{
                   textAlign: "center",

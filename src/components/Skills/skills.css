@@ -21,8 +21,8 @@
   position: static;
 }
 @media screen and (max-width: 567px) {
-  .skills-container {
+  /* .skills-container {
     position: relative;
     top: 100px;
-  }
+  } */
 }

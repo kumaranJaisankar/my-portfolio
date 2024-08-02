@@ -10,11 +10,12 @@
   box-sizing: content-box;
   outline: none !important;
 }
-html , body{
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
-html{
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 9rem;
 }
@@ -38,7 +39,6 @@ html{
   background: rgb(255, 255, 255);
 }
 
-
 .App-header {
   color: white;
 }
@@ -46,6 +46,7 @@ html{
   background-color: #282c34;
   min-height: 80vh;
   overflow-x: hidden;
+  overflow-y: hidden;
   padding: 20px;
   display: flex;
   flex-direction: column;

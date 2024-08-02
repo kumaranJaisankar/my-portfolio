@@ -6,16 +6,16 @@
   font-weight: 100;
   margin-bottom: 30px;
 }
-.skills-container {
-  min-height: 50vh;
-  width: 90%;
+.experience-container {
+  min-height: 80vh;
+  /* width: 90%; */
   position: static;
 }
 @media screen and (max-width: 567px) {
-  .skills-container {
+  /* .skills-container {
     position: relative;
-    top: 100px;
-  }
+    top: 100px; */
+  /* } */
 }
 .course-title {
   color: rgb(255, 255, 255);

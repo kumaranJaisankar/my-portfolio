@@ -22,6 +22,18 @@
   opacity: 1;
 }
 
+@media (min-width: 320px) {
+  .gen_ai {
+    opacity: 1;
+  }
+}
+
+@media (min-width: 620px) {
+  .gen_ai {
+    opacity: 0;
+  }
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -175,12 +187,12 @@ article {
   font-weight: 100;
   margin-bottom: 40px !important;
 }
-@media screen and (max-width: 576px) {
-  article {
+/* @media screen and (max-width: 576px) { */
+/* article {
     position: relative;
     top: 100px;
   }
-}
+} */
 .row-2 {
   display: flex;
   justify-content: space-around;

@@ -1,7 +1,7 @@
 import "./skills.css";
 
 const Skills = () => (
-  <div className="skills-container" id="MySkills">
+  <div className="skills-container mt-5" id="MySkills">
     <h1 className="skills">SKILLS</h1>
     <ul className="skills-list">
       <li>

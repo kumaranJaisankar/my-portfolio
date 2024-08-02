@@ -6,7 +6,7 @@ import { AiFillRead } from "react-icons/ai";
 
 const Expirence = () => {
   return (
-    <div className="skills-container">
+    <div className="experience-container mt-5">
       <h1 className="exprience">MY JOURNEY</h1>
       <Chrono
         hideControls
@@ -27,14 +27,17 @@ const Expirence = () => {
           <MdSchool color="#f3b934" size={40} />
         </div>
         <div>
-        <h1 className="course-title">
+          <h1 className="course-title">
             Exprience{" "}
             <span className="badge badge-secondary p-1">
               Feb'2023 - present
             </span>
           </h1>
           <p className="discription">
-          I am currently working as Associate Software Developer at Vanna info tech  (Vanna Infotech is a leading software services company specializing in application development across all major software platforms) and boosting my professional skills.
+            I am currently working as Associate Software Developer at Vanna info
+            tech (Vanna Infotech is a leading software services company
+            specializing in application development across all major software
+            platforms) and boosting my professional skills.
           </p>
         </div>
         <div>
