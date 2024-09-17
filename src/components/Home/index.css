@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans:wght@700&family=Roboto+Condensed:ital,wght@0,400;0,700;1,700&display=swap");
+.rounded-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  position: relative;
+  left: -26px;
+  top: -120px;
+}
+.blog-title-emoji {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  }
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.name {
+  position: relative;
+  text-align: start !important;
+  top: -150px;
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 34px !important;
+  margin-left: 10px !important;
+}
+p {
+  font-family: "Alumni Sans", sans-serif;
+}
+.vis {
+  visibility: visible !important;
+}
+/* welcome text */
+
+.welcome {
+  font-family: "Permanent Marker";
+  /* position: relative;
+  top: -80px; */
+  margin-top: 20px !important;
+  color: white;
+  /* animation: color-change infinite 5s linear; */
+  text-shadow: 1px 1px 2px rgb(225, 212, 212), 0 0 1em rgb(248, 248, 255),
+    0 0 0.2em rgb(244, 244, 251);
+}
+.div-width {
+  min-height: 90vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icone-rotate {
+  transform: rotate(90deg);
+}
+button {
+  outline: none;
+}
