@@ -46,6 +46,12 @@ const Skills = () => (
       <li>
         <img src="/images/mysql.png" alt="sql logo" width={100} />
       </li>
+      <li>
+        <img src="/images/java.png" alt="sql logo" width={100} />
+      </li>
+      <li>
+        <img src="/images/Clojure.png" alt="sql logo" width={100} />
+      </li>
     </ul>
   </div>
 );
