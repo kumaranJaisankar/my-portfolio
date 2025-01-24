@@ -10,7 +10,7 @@ const Header = () => {
 
     // current scroll position
     const currentScrollPos = window.pageYOffset;
-    console.log(currentScrollPos);
+    // console.log(currentScrollPos);
     if (prevScrollPos < currentScrollPos) {
       // user has scrolled up
 

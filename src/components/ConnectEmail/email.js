@@ -1,11 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Popup from "reactjs-popup";
 import emailjs from "@emailjs/browser";
 import { BsFillCheckCircleFill } from "react-icons/bs";
+import { BiErrorCircle } from "react-icons/bi";
 import "./email.css";
 
 const ConnectEmail = () => {
   const form = useRef();
+  const [isSubmited, setIsSubmited] = useState(false);
+  const [isError, setIsError] = useState(false);
 
   const closingTime = (close) => {
     setTimeout(() => close(), 4000);
@@ -13,6 +16,8 @@ const ConnectEmail = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSubmited(false);
+    setIsError(false);
 
     emailjs
       .sendForm(
@@ -23,13 +28,18 @@ const ConnectEmail = () => {
       )
       .then(
         (result) => {
+          setIsError(false);
+          setIsSubmited(true);
           e.target.reset();
           console.log(result.text);
         },
         (error) => {
-          console.log(error.text);
+          setIsError(true);
+          setIsSubmited(false);
+          console.log(`error ${error.text}`);
         }
-      );
+      )
+      .catch((e) => console.log(`failes ${e}`));
   };
 
   return (
@@ -60,17 +70,13 @@ const ConnectEmail = () => {
         name="message"
         placeholder="Write Something to convey to me"
       />
-      <Popup
-        modal
-        trigger={
-          <button
-            type="submit"
-            className="btn-warning form-control h-25 rounded-pill font-weight-bold btn-size mt-2"
-          >
-            send
-          </button>
-        }
+      <button
+        type="submit"
+        className="btn-warning form-control h-25 rounded-pill font-weight-bold btn-size mt-2"
       >
+        send
+      </button>
+      <Popup open={isSubmited} modal>
         {(close) => {
           closingTime(close);
           return (
@@ -79,6 +85,17 @@ const ConnectEmail = () => {
               <h6 className="text-white ml-2">
                 Message Submitted, Within 24hours you get reply
               </h6>
+            </div>
+          );
+        }}
+      </Popup>
+      <Popup open={isError} modal>
+        {(close) => {
+          closingTime(close);
+          return (
+            <div className="error-container bg-dark p-4 rounded-sm d-flex align-items-center">
+              <BiErrorCircle color="red" size={20} />
+              <h6 className="text-white ml-2">Something Wrong!</h6>
             </div>
           );
         }}

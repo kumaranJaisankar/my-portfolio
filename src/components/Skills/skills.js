@@ -6,6 +6,7 @@ const Skills = () => (
     <ul className="skills-list">
       <li>
         <img src="/images/html (2).png" alt="html logo" width={100} />
+        {/* <p>90</p> */}
       </li>
       <li>
         <img src="/images/css3 (1).png" alt="css logo" width={100} />
@@ -29,6 +30,9 @@ const Skills = () => (
         <img src="/images/python.png" alt="py logo" width={100} />
       </li>
       <li>
+        <img src="/images/Java.png" alt="java logo" width={100} />
+      </li>
+      <li>
         <img src="/images/dart.png" alt="dart logo" width={100} />
       </li>
       <li>
@@ -40,14 +44,14 @@ const Skills = () => (
       <li>
         <img src="/images/FastAPI.png" alt="Fastapi logo" width={100} />
       </li>
+      <li>
+        <img src="/images/Spring.png" alt="Spring logo" width={100} />
+      </li>
       {/* <li>
         <img src="/images/pngwing.com (1).png" alt="ex logo" width={100} />
       </li> */}
       <li>
         <img src="/images/mysql.png" alt="sql logo" width={100} />
-      </li>
-      <li>
-        <img src="/images/Java.png" alt="java logo" width={100} />
       </li>
       <li>
         <img src="/images/Clojure.png" alt="clojure logo" width={100} />

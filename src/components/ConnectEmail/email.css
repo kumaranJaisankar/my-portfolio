@@ -7,12 +7,21 @@ form label {
   color: white;
 }
 .feedback-container {
-  border-left: 5px solid rgb(28, 182, 28);
+  border-left: 5px solid rgb(93, 245, 93);
   width: 400px;
   position: relative;
   top: 0;
   box-shadow: inset;
 }
+
+.error-container {
+  border-left: 5px solid rgb(246, 68, 68);
+  width: 400px;
+  position: relative;
+  top: 0;
+  box-shadow: inset;
+}
+
 input::placeholder {
   color: rgb(145, 121, 121) !important;
   opacity: 0.4 !important;
